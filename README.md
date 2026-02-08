@@ -15,25 +15,6 @@ Traditional multi-agent debugging systems apply fixed coordination patterns rega
 
 Our evaluation demonstrates that adaptive strategy selection improves debugging efficiency by 37% compared to fixed multi-agent architectures while maintaining 94%+ fix accuracy on complex defects.
 
-## System Architecture
-
-```mermaid
-flowchart TD
-    A[Buggy Code] --> B[Main Analysis Agent]
-    B --> C{Complexity<br>Classification}
-    C -->|SIMPLE| D[Single-Agent Direct Fix]
-    C -->|COMPLEX| E[Agent Generation]
-    E --> F[Dependency Ordering]
-    F --> G[Sequential Agent Execution]
-    G --> H[Per-Agent Review Loop]
-    D --> I[Validation Agent]
-    H --> I
-    I --> J{Fixed?}
-    J -->|Yes| K[Return Fixed Code]
-    J -->|No| L[Re-analysis<br>with Failure Context]
-    L --> C
-```
-
 ## Installation
 
 ```bash
@@ -72,6 +53,7 @@ Or run the example script:
 ```bash
 python main.py
 ```
+
 
 
 
