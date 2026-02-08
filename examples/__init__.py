@@ -1,0 +1,1 @@
+"""Example buggy code snippets for testing ASAD debugger."""
