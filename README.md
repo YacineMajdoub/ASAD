@@ -43,7 +43,7 @@ cd asad
 # Install dependencies
 pip install -r requirements.txt
 ```
-# Configuration
+## Configuration
 Paste you API keys in .env.test
 ```bash
 TOGETHER_API_KEY=sk-...
@@ -56,7 +56,7 @@ and run
 cp .env.test .env
 ```
 
-# Usage
+## Usage
 ```bash
 from asad.pipeline import adaptive_debugger
 
@@ -72,15 +72,6 @@ Or run the example script:
 python main.py
 ```
 
-# Architecture
-```bash
-asad/
-├── llm/          # Unified LLM client interface
-├── parsing/      # JSON/code cleaning utilities
-├── agents/       # Analysis, execution, and review agents
-├── strategies/   # Simple fix vs. multi-agent strategies
-└── pipeline.py   # Main orchestration logic
-```
 
 
 
