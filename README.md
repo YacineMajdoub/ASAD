@@ -13,8 +13,6 @@ Traditional multi-agent debugging systems apply fixed coordination patterns rega
 - **SIMPLE path**: Direct repair using a single specialized agent for isolated bugs (e.g., syntax errors, single-line logic flaws)
 - **COMPLEX path**: Coordinated multi-agent workflow with dependency-aware execution ordering for interdependent defects (e.g., coupled logic errors, resource management issues)
 
-Our evaluation demonstrates that adaptive strategy selection improves debugging efficiency by 37% compared to fixed multi-agent architectures while maintaining 94%+ fix accuracy on complex defects.
-
 ## Installation
 
 ```bash
@@ -53,6 +51,7 @@ Or run the example script:
 ```bash
 python main.py
 ```
+
 
 
 
