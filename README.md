@@ -1,5 +1,4 @@
 # ASAD: Adaptive Software Agents for Debugging
-# ASAD: Adaptive Software Agents for Debugging
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -82,6 +81,7 @@ asad/
 ├── strategies/   # Simple fix vs. multi-agent strategies
 └── pipeline.py   # Main orchestration logic
 ```
+
 
 
 
