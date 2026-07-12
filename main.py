@@ -5,8 +5,8 @@ Main entry point for ASAD debugger with example execution.
 
 import os
 from dotenv import load_dotenv
-from asad.pipeline import adaptive_debugger
-from examples.buggy_code import complex_buggy_code, medium_buggy_code, simple_buggy_code
+from ASAD.pipeline import adaptive_debugger
+from Test.buggy_code import complex_buggy_code, medium_buggy_code, simple_buggy_code
 
 
 def main():
