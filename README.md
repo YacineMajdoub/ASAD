@@ -25,18 +25,27 @@ pip install -r requirements.txt
 ```
 ## Configuration
 
-Run
-```bash
-cp .env.test .env
+Create a .env file in the project root:
+
+```bash 
+touch .env
 ```
 
-Paste you API keys in .env.test
-```bash
+Add your API keys and provider configuration to .env:
+```bash 
 TOGETHER_API_KEY=sk-...
 GROQ_API_KEY=gsk-...
 OPENAI_API_KEY=sk-...
-LLM_PROVIDER=openai  # Options: together, groq, openai
-```
+
+LLM_PROVIDER="openai"
+```
+LLM_PROVIDER specifies the provider to use. Supported options are:
+
+```bash 
+together
+groq
+openai
+```
 
 ## Usage
 ```bash
