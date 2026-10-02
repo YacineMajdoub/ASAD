@@ -24,17 +24,19 @@ cd asad
 pip install -r requirements.txt
 ```
 ## Configuration
+
+Run
+```bash
+cp .env.test .env
+```
+
 Paste you API keys in .env.test
 ```bash
 TOGETHER_API_KEY=sk-...
 GROQ_API_KEY=gsk-...
 OPENAI_API_KEY=sk-...
 LLM_PROVIDER=openai  # Options: together, groq, openai
-```
-and run
-```bash
-cp .env.test .env
-```
+```
 
 ## Usage
 ```bash
