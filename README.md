@@ -17,7 +17,7 @@ Traditional multi-agent debugging systems apply fixed coordination patterns rega
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/asad.git
+git clone https://github.com/YacineMajdoub/asad.git
 cd asad
 
 # Install dependencies
