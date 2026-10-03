@@ -6,6 +6,14 @@
 
 ASAD introduces an adaptive debugging framework that dynamically selects between single-agent and multi-agent repair strategies based on static analysis of bug complexity. This approach reduces unnecessary coordination overhead while maintaining robustness for challenging debugging scenarios.
 
+> [!NOTE]
+> **Fork Enhancements (`patched-by-mb`)**
+> 
+> This fork includes a critical patch addressing **Anomaly #1** (Polyglot Static Complexity Analysis):
+> - **Issue**: The original analyzer was strictly coupled to the C language (hardcoded Tree-sitter C parser, C AST node types, and C-only concurrency/resource indicators), resulting in erroneous metrics or parsing failures when processing Python code.
+> - **Solution**: Implemented a modular polyglot architecture with language profiles (Python, C, C++, Java), automatic language detection, grammar-aware metric extraction (cyclomatic complexity, fan-in/fan-out, call graphs), and graceful fallbacks.
+> - **Full Remediation Details**: See [Anomaly #1 Resolution & Plan](docs/ANOMALY_1_RESOLUTION.md).
+
 ## Core Innovation
 
 Traditional multi-agent debugging systems apply fixed coordination patterns regardless of bug characteristics. ASAD solves this inefficiency through **complexity-aware routing**:
